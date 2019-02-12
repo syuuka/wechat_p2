@@ -1,0 +1,36 @@
+.collection_line{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 50rpx;
+  width: 50rpx;
+  opacity: 0.5;
+  margin-top: 10rpx;
+}
+
+.message{
+  color: orange;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(247, 249, 251, 1)
+}
+
+.review_item {
+  height: 300rpx;
+  width: 80%;
+  display: flex;
+  border: 5rpx solid rgba(0, 0, 0, 0.1);
+  border-radius: 5rpx;
+  margin-top: 30rpx;
+  box-shadow: 10rpx;
+}

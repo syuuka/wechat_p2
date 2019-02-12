@@ -1,0 +1,22 @@
+<view class='main'>
+  <view class='index'>
+    <image class='hotMovie_image' src='{{hotMovieImage}}' mode='widthFix' bindtap='goDetail' 
+    data-movieTitle='{{movieTitle}}'></image>
+    <view class='hotMovie_title' bindtap='goDetail' data-movieTitle='{{movieTitle}}'>{{movieTitle}}</view>
+    <view class='hotMovie_line'>
+      <image src="{{user_head}}" class='user_head'></image>
+      <view class='user'>{{recommender}}  </view>
+      <view class='hotMovie_message' >{{recommendMessage}}</view>
+    </view>
+  </view>
+  <view class='bottomLine'>
+    <view class='bottomLine_botton' bindtap='goHotMovieList'>
+      <image src='/images/tabBar_hot.png' class='icon'></image>
+      <view>热门</view>
+    </view>
+    <view class='bottomLine_botton' bindtap='goMyZone'>
+      <image src='/images/tabBar_myZone.png' class='icon'></image>
+      <view>我的</view>
+    </view>
+  </view>
+</view>

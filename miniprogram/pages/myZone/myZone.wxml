@@ -1,0 +1,19 @@
+<view class='collection_line'>
+  <view class='message'>收藏的影评</view>
+  <image src='../../images/down.png' class='icon'></image>
+</view>
+<view class='list'>
+  <view class='review_item' wx:for="{{movies}}" wx:for-item="movie">
+    <view class='review_item_view'>
+      <image class='review_item_view_img' src='{{movie.image}}'></image>
+    </view>
+    <view class='review_item_text'>
+      <view class='review_item_title'>{{movie.title}}</view>
+      <view class='review_item_review'>{{movie.review}}</view>
+      <view class='user_line'>
+        <image class='user_head'>{{movie.user.userHead}}</image>
+        <view class='user'>{{movie.user.userName}}</view>
+      </view>
+    </view>
+  </view>
+</view>
